@@ -62,6 +62,161 @@
       <div id="main" class="wrapper">
         <div id="primary" class="site-content"><div id="content" role="main">
   
+    <article id="post-ES6标准模块" class="post-ES6标准模块 post type-post status-publish format-standard hentry">
+    <!---->
+
+      <header class="entry-header">
+        
+        
+  
+    <h1 class="entry-title">
+      <a class="article-title" href="/2019/04/24/ES6标准模块/">ES6标准模块</a>
+    </h1>
+  
+
+        
+        <div class="comments-link">
+            
+            <a href="javascript:void(0);" data-url="http://yoursite.com/2019/04/24/ES6标准模块/" data-id="cjuuvui890000n8md6wfyxg7a" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+        </div><!-- .comments-link -->
+      </header><!-- .entry-header -->
+
+    <div class="entry-content">
+      
+        <h1 id="模块"><a href="#模块" class="headerlink" title="模块"></a>模块</h1><h2 id="导出"><a href="#导出" class="headerlink" title="导出"></a>导出</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// export default 要导出的模块名</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> []</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> arr = []</span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> arr</span><br></pre></td></tr></table></figure>
+<p><strong><em>注意！在一个文件中，只能使用一次<code>export default</code></em></strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* </span></span><br><span class="line"><span class="comment">  export const 变量 = 值</span></span><br><span class="line"><span class="comment">  </span></span><br><span class="line"><span class="comment">  const 变量 = 值</span></span><br><span class="line"><span class="comment">  export &#123;变量&#125;</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">  // 引入时必须使用下面方式</span></span><br><span class="line"><span class="comment">  import &#123;变量&#125; from './模块文件'</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">  这种方式不可避免的需要设置别名</span></span><br><span class="line"><span class="comment">  导出时使用别名</span></span><br><span class="line"><span class="comment">  const a = 1</span></span><br><span class="line"><span class="comment">  export &#123;a as 别名&#125;</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">  导入时使用别名</span></span><br><span class="line"><span class="comment">  import &#123;a as 别名&#125; from '模块文件'</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 一个文件中可以同时到处多个模块</span></span><br><span class="line"><span class="keyword">const</span> a = <span class="number">1</span></span><br><span class="line"><span class="keyword">const</span> b = <span class="number">2</span></span><br><span class="line"><span class="keyword">const</span> c = <span class="number">3</span></span><br><span class="line"><span class="keyword">export</span> &#123;a, b, c <span class="keyword">as</span> c1&#125;</span><br></pre></td></tr></table></figure>
+<p>如果到导出时使用的是<code>export default xxx</code>，那么导入时使用<code>import 自定义名字 from &#39;模块&#39;</code></p>
+<p>如果导出时使用的是<code>export {a}</code>, 那么导入时就得使用<code>import {a} from &#39;模块&#39;</code></p>
+
+      
+    </div><!-- .entry-content -->
+
+    <footer class="entry-meta">
+    <a href="/2019/04/24/ES6标准模块/">
+    <time datetime="2019-04-24T07:13:59.000Z" class="entry-date">
+        2019-04-24
+    </time>
+</a>
+    
+    
+    </footer>
+</article>
+
+
+
+
+
+
+  
+    <article id="post-webpack基本环境搭建" class="post-webpack基本环境搭建 post type-post status-publish format-standard hentry">
+    <!---->
+
+      <header class="entry-header">
+        
+        
+  
+    <h1 class="entry-title">
+      <a class="article-title" href="/2019/04/24/webpack基本环境搭建/">webpack基本环境搭建</a>
+    </h1>
+  
+
+        
+        <div class="comments-link">
+            
+            <a href="javascript:void(0);" data-url="http://yoursite.com/2019/04/24/webpack基本环境搭建/" data-id="cjuuvui8v0005n8mdoseo1dwa" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+        </div><!-- .comments-link -->
+      </header><!-- .entry-header -->
+
+    <div class="entry-content">
+      
+        <h1 id="webpack"><a href="#webpack" class="headerlink" title="webpack"></a>webpack</h1><p>需要两个模块<br>webpack webpack-cli</p>
+<h2 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h2><p>npm init</p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>npm i –save-dev webpack webpack-cli<br>或<br>yarn add webpack webpack-cli –dev</p>
+<h2 id="webpack默认配置"><a href="#webpack默认配置" class="headerlink" title="webpack默认配置"></a>webpack默认配置</h2><p>webpack默认把./src/index.js作为入口文件<br>打包后会生成./dist/main.js</p>
+<h2 id="webpack自定义配置"><a href="#webpack自定义配置" class="headerlink" title="webpack自定义配置"></a>webpack自定义配置</h2><p>需要在项目根目录中创建一个文件webpack.config.js</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">  entry: <span class="string">"入口文件路径"</span>,</span><br><span class="line">  output: &#123;</span><br><span class="line">    path: path.resolve(__dirname, <span class="string">'文件夹名字'</span>),</span><br><span class="line">    filename: <span class="string">'文件名.js'</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>所有的操作后都需要使用<code>npm run dev</code>重新打包</p>
+<h2 id="运行命令"><a href="#运行命令" class="headerlink" title="运行命令"></a>运行命令</h2><p>webpack </p>
+<blockquote>
+<p>因为webpack我们只在本地安装，所以不存在全局命令webpack</p>
+</blockquote>
+<p>package.json<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"scripts"</span>: &#123;</span><br><span class="line">  <span class="string">"dev"</span>: <span class="string">"webpack"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>执行npm run dev即可，会自动找到本地的webpack.config.js</p>
+
+      
+    </div><!-- .entry-content -->
+
+    <footer class="entry-meta">
+    <a href="/2019/04/24/webpack基本环境搭建/">
+    <time datetime="2019-04-24T07:12:58.000Z" class="entry-date">
+        2019-04-24
+    </time>
+</a>
+    
+    
+    </footer>
+</article>
+
+
+
+
+
+
+  
+    <article id="post-promise" class="post-promise post type-post status-publish format-standard hentry">
+    <!---->
+
+      <header class="entry-header">
+        
+        
+  
+    <h1 class="entry-title">
+      <a class="article-title" href="/2019/04/24/promise/">promise</a>
+    </h1>
+  
+
+        
+        <div class="comments-link">
+            
+            <a href="javascript:void(0);" data-url="http://yoursite.com/2019/04/24/promise/" data-id="cjuuvui8n0001n8mdy2et8o9k" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+        </div><!-- .comments-link -->
+      </header><!-- .entry-header -->
+
+    <div class="entry-content">
+      
+        <h1 id="promise"><a href="#promise" class="headerlink" title="promise"></a>promise</h1><blockquote>
+<p>promise是用来解决异步操作的一个新的工具 （之前使用的回调函数），proimise把异步请求变成了链式调用，更符合我们正常的习惯</p>
+</blockquote>
+<h2 id="priomise方法"><a href="#priomise方法" class="headerlink" title="priomise方法"></a>priomise方法</h2><ul>
+<li>Promise.prototype.then</li>
+<li>Promise.prototype.catch</li>
+</ul>
+<blockquote>
+<p>想要调用这两个方法就必须new Promise得到对应的promise对象</p>
+</blockquote>
+<h3 id="创建promise"><a href="#创建promise" class="headerlink" title="创建promise"></a>创建promise</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> promise = <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function">(<span class="params">resolve, reject</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="comment">// 一般会执行一些操作，如果成功则调用resolve失败则调用reject</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* </span></span><br><span class="line"><span class="comment">  .then方法中有一个函数</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">  </span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">  如果需要多次.then，则将catch放在最后</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line">promise.then(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">  <span class="comment">// 这个函数就是在new Promise时的resolve函数</span></span><br><span class="line">&#125;).catch(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">  <span class="comment">// 这个函数就是reject函数</span></span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">// resolve函数中的返回值</span></span><br><span class="line">promise.then(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="number">1</span></span><br><span class="line">&#125;).then(<span class="function"><span class="params">num</span> =&gt;</span> &#123;</span><br><span class="line">  <span class="comment">// num 就是1</span></span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">// 如果返回值是一个promise对象</span></span><br><span class="line">promise.then(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">return</span> promise</span><br><span class="line">&#125;).then(<span class="function">(<span class="params">res</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="comment">// res就是上一个then中返回的promise对象的.then结果</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+      
+    </div><!-- .entry-content -->
+
+    <footer class="entry-meta">
+    <a href="/2019/04/24/promise/">
+    <time datetime="2019-04-24T07:11:50.000Z" class="entry-date">
+        2019-04-24
+    </time>
+</a>
+    
+    
+    </footer>
+</article>
+
+
+
+
+
+
+  
     <article id="post-皮肤测试" class="post-皮肤测试 post type-post status-publish format-standard hentry">
     <!---->
 
@@ -77,7 +232,7 @@
         
         <div class="comments-link">
             
-            <a href="javascript:void(0);" data-url="http://yoursite.com/2019/04/23/皮肤测试/" data-id="cjutq2l1s0003i4mdgyfs3v84" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+            <a href="javascript:void(0);" data-url="http://yoursite.com/2019/04/23/皮肤测试/" data-id="cjuuvui8x0006n8mdccn2ub8d" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -119,7 +274,7 @@
         
         <div class="comments-link">
             
-            <a href="javascript:void(0);" data-url="http://yoursite.com/2019/04/23/新文章/" data-id="cjutq2l1p0002i4mddsk1q84x" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+            <a href="javascript:void(0);" data-url="http://yoursite.com/2019/04/23/新文章/" data-id="cjuuvui8u0004n8mdl7xbbrae" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -162,7 +317,7 @@
         
         <div class="comments-link">
             
-            <a href="javascript:void(0);" data-url="http://yoursite.com/2019/04/23/test/" data-id="cjutq2l1m0001i4mdq51l0r89" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+            <a href="javascript:void(0);" data-url="http://yoursite.com/2019/04/23/test/" data-id="cjuuvui8s0003n8mdj0gzy26t" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -215,7 +370,7 @@
         
         <div class="comments-link">
             
-            <a href="javascript:void(0);" data-url="http://yoursite.com/2019/04/23/hello-world/" data-id="cjutq2l1f0000i4mdlok5jocq" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+            <a href="javascript:void(0);" data-url="http://yoursite.com/2019/04/23/hello-world/" data-id="cjuuvui8q0002n8mdhx3pcvsw" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -274,19 +429,23 @@
       <ul>
         
           <li>
+            <a href="/2019/04/24/ES6标准模块/">ES6标准模块</a>
+          </li>
+        
+          <li>
+            <a href="/2019/04/24/webpack基本环境搭建/">webpack基本环境搭建</a>
+          </li>
+        
+          <li>
+            <a href="/2019/04/24/promise/">promise</a>
+          </li>
+        
+          <li>
             <a href="/2019/04/23/皮肤测试/">皮肤测试</a>
           </li>
         
           <li>
             <a href="/2019/04/23/新文章/">新文章</a>
-          </li>
-        
-          <li>
-            <a href="/2019/04/23/test/">test</a>
-          </li>
-        
-          <li>
-            <a href="/2019/04/23/hello-world/">Hello World</a>
           </li>
         
       </ul>

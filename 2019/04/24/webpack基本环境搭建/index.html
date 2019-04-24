@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+  
+  <meta name="description" content="webpack需要两个模块webpack webpack-cli
+初始化npm init
+安装npm i –save-dev webpack webpack-cli或yarn add webpack webpack-cli –dev
+webpack默认配置webpack默认把./src/index.">
+  
+
+  
+  
+  
+  
+  
+  
+  <title>webpack基本环境搭建 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="webpack需要两个模块webpack webpack-cli 初始化npm init 安装npm i –save-dev webpack webpack-cli或yarn add webpack webpack-cli –dev webpack默认配置webpack默认把./src/index.js作为入口文件打包后会生成./dist/main.js webpack自定义配置需要在项目根目录中">
+<meta property="og:type" content="article">
+<meta property="og:title" content="webpack基本环境搭建">
+<meta property="og:url" content="http://yoursite.com/2019/04/24/webpack基本环境搭建/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="webpack需要两个模块webpack webpack-cli 初始化npm init 安装npm i –save-dev webpack webpack-cli或yarn add webpack webpack-cli –dev webpack默认配置webpack默认把./src/index.js作为入口文件打包后会生成./dist/main.js webpack自定义配置需要在项目根目录中">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-04-24T07:13:14.168Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="webpack基本环境搭建">
+<meta name="twitter:description" content="webpack需要两个模块webpack webpack-cli 初始化npm init 安装npm i –save-dev webpack webpack-cli或yarn add webpack webpack-cli –dev webpack默认配置webpack默认把./src/index.js作为入口文件打包后会生成./dist/main.js webpack自定义配置需要在项目根目录中">
+  
+  
+    <link rel="icon" href="/css/images/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+  
+  <!-- baidu webmaster push -->
+  <script src="//push.zhanzhang.baidu.com/push.js"></script>
+</head></html>
+<body class="home blog custom-background custom-font-enabled single-author">
+  <div id="page" class="hfeed site">
+      <header id="masthead" class="site-header" role="banner">
+    <hgroup>
+      <h1 class="site-title">
+        <a href="/" title="Hexo" rel="home">Hexo</a>
+      </h1>
+      
+        <h2 class="site-description hitokoto"></h2>
+        <script type="text/javascript" src="https://v1.hitokoto.cn/?encode=js"></script>
+      
+    </hgroup>
+
+    <nav id="site-navigation" class="main-navigation" role="navigation">
+            <button class="menu-toggle">菜单</button>
+            <a class="assistive-text" href="/#content" title="跳至内容">跳至内容</a><!--TODO-->
+            <div class="menu-main-container">
+                <ul id="menu-main" class="nav-menu">
+                
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/">Home</a></li>
+                
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/archives">Archives</a></li>
+                
+                </ul>
+            </div>
+    </nav>
+</header>
+
+      <div id="main" class="wrapper">
+        <div id="primary" class="site-content"><div id="content" role="main"><article id="post-webpack基本环境搭建" class="post-webpack基本环境搭建 post type-post status-publish format-standard hentry">
+    <!---->
+
+      <header class="entry-header">
+        
+        
+  
+    <h1 class="entry-title article-title">
+      webpack基本环境搭建
+    </h1>
+  
+
+        
+        <div class="comments-link">
+            
+            <a href="javascript:void(0);" data-url="http://yoursite.com/2019/04/24/webpack基本环境搭建/" data-id="cjuuvui8v0005n8mdoseo1dwa" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+        </div><!-- .comments-link -->
+      </header><!-- .entry-header -->
+
+    <div class="entry-content">
+      
+        <h1 id="webpack"><a href="#webpack" class="headerlink" title="webpack"></a>webpack</h1><p>需要两个模块<br>webpack webpack-cli</p>
+<h2 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h2><p>npm init</p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>npm i –save-dev webpack webpack-cli<br>或<br>yarn add webpack webpack-cli –dev</p>
+<h2 id="webpack默认配置"><a href="#webpack默认配置" class="headerlink" title="webpack默认配置"></a>webpack默认配置</h2><p>webpack默认把./src/index.js作为入口文件<br>打包后会生成./dist/main.js</p>
+<h2 id="webpack自定义配置"><a href="#webpack自定义配置" class="headerlink" title="webpack自定义配置"></a>webpack自定义配置</h2><p>需要在项目根目录中创建一个文件webpack.config.js</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">  entry: <span class="string">"入口文件路径"</span>,</span><br><span class="line">  output: &#123;</span><br><span class="line">    path: path.resolve(__dirname, <span class="string">'文件夹名字'</span>),</span><br><span class="line">    filename: <span class="string">'文件名.js'</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>所有的操作后都需要使用<code>npm run dev</code>重新打包</p>
+<h2 id="运行命令"><a href="#运行命令" class="headerlink" title="运行命令"></a>运行命令</h2><p>webpack </p>
+<blockquote>
+<p>因为webpack我们只在本地安装，所以不存在全局命令webpack</p>
+</blockquote>
+<p>package.json<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"scripts"</span>: &#123;</span><br><span class="line">  <span class="string">"dev"</span>: <span class="string">"webpack"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>执行npm run dev即可，会自动找到本地的webpack.config.js</p>
+
+      
+    </div><!-- .entry-content -->
+
+    <footer class="entry-meta">
+    <a href="/2019/04/24/webpack基本环境搭建/">
+    <time datetime="2019-04-24T07:12:58.000Z" class="entry-date">
+        2019-04-24
+    </time>
+</a>
+    
+    
+    </footer>
+</article>
+
+
+    
+<nav class="nav-single">
+    <h3 class="assistive-text">文章导航</h3>
+    
+        <span class="nav-previous"><a href="/2019/04/24/ES6标准模块/" rel="prev"><span class="meta-nav">←</span> ES6标准模块</a></span>
+    
+    
+        <span class="nav-next"><a href="/2019/04/24/promise/" rel="next">promise <span class="meta-nav">→</span></a></span>
+    
+</nav><!-- .nav-single -->
+
+
+
+
+
+
+
+</div></div>
+        <div id="secondary" class="widget-area" role="complementary">
+  
+    <aside id="search" class="widget widget_search"><form role="search" method="get" accept-charset="utf-8" id="searchform" class="searchform" action="//google.com/search">
+    <div>
+        <input type="text" value name="s" id="s">
+        <input type="submit" id="searchsubmit" value="搜索">
+    </div>
+</form></aside>
+  
+    
+  
+    
+  
+    
+  <aside class="widget">
+    <h3 class="widget-title">Recents</h3>
+    <div class="widget-content">
+      <ul>
+        
+          <li>
+            <a href="/2019/04/24/ES6标准模块/">ES6标准模块</a>
+          </li>
+        
+          <li>
+            <a href="/2019/04/24/webpack基本环境搭建/">webpack基本环境搭建</a>
+          </li>
+        
+          <li>
+            <a href="/2019/04/24/promise/">promise</a>
+          </li>
+        
+          <li>
+            <a href="/2019/04/23/皮肤测试/">皮肤测试</a>
+          </li>
+        
+          <li>
+            <a href="/2019/04/23/新文章/">新文章</a>
+          </li>
+        
+      </ul>
+    </div>
+  </aside>
+
+  
+    
+  
+    
+  
+</div>
+      </div>
+      <footer id="colophon" role="contentinfo">
+    <p>&copy; 2019 John Doe
+    All rights reserved.</p>
+    <p>Powered by <a href="http://hexo.io/" target="_blank">Hexo</a></p>
+</footer>
+    <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='/js/share.js'];</script>
+
+<script src="/js/jquery-3.3.1.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+<script src="/js/navigation.js"></script>
+
+<div id="bg"></div>
+
+  </div>
+</body>
+</html>
